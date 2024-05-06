@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 import { MdArrowOutward } from "react-icons/md";
 import { useState, useEffect } from 'react';
 
-function DateTime() {
+function DateTime({dark}:{dark: boolean}) {
     const [dateTime, setDateTime] = useState(new Date());
   
     useEffect(() => {
@@ -16,7 +16,7 @@ function DateTime() {
   
     return (
         <motion.div
-        className='mx-5 sm:mx-10 mt-10'
+        className={`${dark ? 'text-stone-200' : 'text-stone-400'} mx-5 sm:mx-10 mt-10`}
         key={dateTime.toString()}
         transition={{duration: 0.5}}
         whileHover={{scale: 1.02}}
@@ -38,7 +38,7 @@ let Card = ({link, icon, name, description, dark}: {icon: string, name: string, 
             <a href={link}>
             <motion.div className="flex flex-col">
                 <motion.div className={`font-bold text-lg ${dark ? "text-stone-200" : "text-stone-900"}`}>{name} {icon}</motion.div>
-                <motion.div className="text-sm flex items-center">{description} <MdArrowOutward className='ml-2'/></motion.div>            </motion.div>
+                <motion.div className={`${dark ? 'text-stone-200' : 'text-stone-400'} text-sm flex items-center`}>{description} <MdArrowOutward className='ml-2'/></motion.div> </motion.div>
             </a>
         </motion.div>
     )

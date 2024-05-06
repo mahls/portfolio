@@ -98,7 +98,7 @@ let cardData = [
 
     </div>
 
-    <DateTime/>
+    <DateTime dark={dark}/>
 
 
 

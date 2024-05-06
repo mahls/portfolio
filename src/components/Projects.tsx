@@ -1,7 +1,7 @@
 
 import {motion} from 'framer-motion'
 import { MdArrowOutward } from "react-icons/md";
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 function DateTime() {
     const [dateTime, setDateTime] = useState(new Date());

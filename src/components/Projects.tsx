@@ -49,7 +49,7 @@ export const Projects = ({dark}: {dark: boolean}) => {
 
 let cardData = [
     {icon: '🌸', name: "Hiragana", description: "Flash cards", link:'https://github.com/mahls/hiragana', id:0},
-    {icon: '🗞️', name: "News-API", description: "News weather and bitcoin", link:'https://github.com/mahls/news-api', id:1},
+    {icon: '🗞️', name: "News-API", description: "News weather and Bitcoin", link:'https://github.com/mahls/news-api', id:1},
     {icon: '🌱', name: "Farming", description: "Grow crops", link:'https://github.com/mahls/farming', id:2},
     {icon: '💡', name: "WS2812", description: "LED strip controller", link:'https://github.com/mahls/ws2812', id:3},
 ]

@@ -1,26 +1,25 @@
-import {useState} from 'react'
-import { Nav } from './components/Nav'
-import { Projects } from './components/Projects'
-import { Footer } from './components/Footer'
-import { About } from './components/About'
-import { motion } from 'framer-motion'
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from './pages/Home'
+import Blog from './pages/Blog'
+import { InstallingWSL } from './pages/blogs/InstallingWSL'
+
 
 function App() {
 
-  const [dark, setDark] = useState(false)
-
   return (
-    <motion.div
-      key={dark ? "dark" : "light"}
-      initial={{ opacity: 0.4 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-      className={dark ? "bg-[#1f1f1f] h-screen overflow-auto" : "bg-stone-200 h-screen overflow-auto"}>
-      <Nav dark={dark} setDark={setDark} />
-      <Projects dark={dark} />
-      <About dark={dark} />
-      <Footer dark={dark} />
-    </motion.div>
+    <>
+
+    <BrowserRouter>
+      <Routes>
+          <Route index element={<Home />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="/blogs/InstallingWSL" element={<InstallingWSL />} />
+      </Routes>
+    </BrowserRouter>
+
+    </>
   )
 }
 

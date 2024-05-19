@@ -12,7 +12,7 @@ const BlogCard = ({blog, dark}: {blog: {id: number, title: string, link: string,
         <motion.div
         whileHover={{scale: 1.02}}
         whileTap={{scale: 0.98}}
-         className={`mt-5 border  rounded p-5 ${dark ? "text-white bg-[#1f1f1f]" : "text-black bg-stone-200"}`}>
+         className={`mt-5 border   rounded p-5 ${dark ? "text-white bg-[#1f1f1f] border-stone-700" : "text-black bg-stone-200 border-stone-300"}`}>
             <a href={`/blogs/${blog.link}`}>
             <h1>{blog.title}</h1>
             <p>{blog.date}</p>

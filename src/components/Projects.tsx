@@ -17,10 +17,11 @@ function DateTime({dark}:{dark: boolean}) {
     return (
         <motion.div
         className={`${dark ? 'text-stone-200' : 'text-stone-400'} mx-5 sm:mx-10 mt-10`}
-        key={dateTime.toString()}
+
+        ><motion.p
         whileHover={{scale: 1.02}}
         whileTap={{scale: 0.98}}
-        >{dateTime.toLocaleString()}</motion.div>
+        >{dateTime.toLocaleString()}</motion.p></motion.div>
     );
   }
   

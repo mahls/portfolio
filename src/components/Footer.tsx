@@ -18,4 +18,3 @@ export const Footer = ({dark}: {dark: boolean}) => {
         </motion.div>
     )
 }
-

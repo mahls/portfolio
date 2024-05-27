@@ -20,7 +20,7 @@ export default function Home() {
         initial={{ opacity: 0.4 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className={dark ? "bg-[#1f1f1f] flex flex-col min-h-screen overflow-auto" : "bg-stone-200 min-h-screen overflow-auto"}>
+        className={dark ? "bg-[#1f1f1f] flex flex-col min-h-screen overflow-auto " : "bg-stone-200 min-h-screen overflow-auto"}>
         <Nav dark={dark} setDark={setDark} />
         <Projects dark={dark} />
         <About dark={dark} />

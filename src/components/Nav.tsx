@@ -55,8 +55,8 @@ export const Nav = ({dark, setDark}: {dark: boolean, setDark: (dark: boolean) =>
                <motion.div 
                            initial={{ opacity: 0 }}
                            animate={{ opacity: 1 }}
-                           transition={{ duration: 0.5 }}
-                           whileTap={{ scale: 1.1 }}
+                           transition={{ duration: 0.1 }}
+                           whileTap={{ scale: 1.5 }}
                            whileHover={{ scale: 1.1 }}
                            whileDrag={{ scale: 1.1 }}
                className="w-10 rounded-full">

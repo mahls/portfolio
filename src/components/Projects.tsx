@@ -62,6 +62,8 @@ const skills2 = [
     {name: 'Python', color: 'badge-secondary'},
     {name: 'C++', color: 'badge-accent'},
     {name: 'Git', color: 'badge-outline'},
+    {name: 'PHP',  color: 'badge-secondary'},
+    {name: 'Angular',  color: 'badge-accent'},
 ]
 
   return(

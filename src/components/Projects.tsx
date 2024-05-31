@@ -47,9 +47,10 @@ export const Projects = ({dark}: {dark: boolean}) => {
 
 const cardData = [
     {icon: '🌸', name: "Hiragana", description: "Flash cards", link:'https://github.com/mahls/hiragana', id:0},
-    {icon: '🗞️', name: "News-API", description: "News weather and Bitcoin", link:'https://github.com/mahls/news-api', id:1},
-    {icon: '🌱', name: "Farming", description: "Grow crops", link:'https://github.com/mahls/farming', id:2},
-    {icon: '💡', name: "WS2812", description: "LED strip controller", link:'https://github.com/mahls/ws2812', id:3},
+    {icon: '🚀', name: "Galaxy Defence", description: "Space Invaders", link:'https://github.com/mahls/galaxy-defence', id:1},
+    {icon: '🗞️', name: "News-API", description: "News weather and Bitcoin", link:'https://github.com/mahls/news-api', id:2},
+    {icon: '🌱', name: "Farming", description: "Grow crops", link:'https://github.com/mahls/farming', id:3},
+    {icon: '💡', name: "WS2812", description: "LED strip controller", link:'https://github.com/mahls/ws2812', id:4},
 ]
 
 const skills2 = [
@@ -82,7 +83,7 @@ const skills2 = [
 
         <DateTime dark={dark}/>
 
-        <div className="px-5 sm:px-10 mt-10 md:grid grid-cols-4 gap-2">
+        <div className="px-5 sm:px-10 mt-10 md:grid grid-cols-5 gap-2">
             {cardData.map((card) => {
                 return(
                     <Card 

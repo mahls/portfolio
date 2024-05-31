@@ -3,8 +3,6 @@ import { motion } from "framer-motion"
 const blogs = [
     {id: 1, title: "Installing WSL", link: "InstallingWSL", date: "2024-05-17", description: "Guide to installing WSL"},
 
-
-
 ]
 
 const BlogCard = ({blog, dark}: {blog: {id: number, title: string, link: string, date: string, description: string}, dark: boolean}) => {
@@ -34,7 +32,7 @@ export const LatestBlogs = ({dark}: {dark: boolean}) => {
          className={`mx-5 sm:mx-10 p-5 mb-10 mt-10 rounded-xl ${dark ? "bg-stone-900" : "bg-stone-100"}`}>
             <h1 className={dark ? "text-white font-bold" : "text-black font-bold mb-2"}>Latest Blogs</h1>
             <div className="grid grid-cols-1 sm:grid sm:grid-cols-1 gap-5">
-                {blogs.map((blog) => <BlogCard dark={dark} blog={blog} />)}
+                {blogs.map((blog) => <BlogCard dark={dark} blog={blog} key={blog.id} />)}
             </div>
         </motion.div>
     )

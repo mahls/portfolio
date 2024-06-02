@@ -56,7 +56,7 @@ const cardData = [
 const skills2 = [
     {name: 'TypeScript', color: 'badge-outline'},
     {name: 'React',  color: 'badge-primary'},
-    {name: 'SQL',  color: 'badge-secondary'},
+    {name: 'SQL / Prisma ',  color: 'badge-secondary'},
     {name: 'DevOps', color: 'badge-accent'},
     {name: 'Java', color: 'badge-outline'},
     {name: 'NodeJS', color: 'badge-primary'},
@@ -64,7 +64,7 @@ const skills2 = [
     {name: 'C++', color: 'badge-accent'},
     {name: 'Git', color: 'badge-outline'},
     {name: 'PHP',  color: 'badge-secondary'},
-    {name: 'Angular',  color: 'badge-accent'},
+    {name: 'React Native',  color: 'badge-accent'},
 ]
 
   return(
